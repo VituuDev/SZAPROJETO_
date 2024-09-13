@@ -52,7 +52,8 @@ ul a{
 }
 
 .conteudo-div{
-
+    display: flex;
+    align-items: flex-start;
 }
 
 .conteudo-div h1{
@@ -69,7 +70,7 @@ ul a{
     bottom: 75px ;
     font-size: 18pt;
     font-family: "Teko", sans-serif;
-
+    
 }
 
 .p1{
@@ -77,6 +78,16 @@ ul a{
     position: relative;
     bottom: 65px;
     font-family: Arial, sans-serif;
+}
+
+.conteudo-div img{
+    float: right;
+    position: relative;
+    bottom: 55px;
+    align-items: flex-start;
+    margin-left: 21px;
+    width: 536px;
+    height: 492px;
 }
 
 #rodape {
