@@ -29,13 +29,13 @@
   font-style: normal;
 }
 
-ul > li {
+.menu ul > li {
   text-align: center;
   margin-top: 80px;
   font-family: "Teko", sans-serif;
 }
 
-ul a {
+.menu ul a {
   text-decoration: none;
   color: #f2f2f2;
   font-size: 40px;
@@ -69,11 +69,11 @@ ul a {
 .conteudo-div h1 {
   margin-left: 4vh;
   font-family: "Whisper", cursive;
-  font-size: 6rem;
+  font-size: 5rem;
 }
 .conteudo-div h6 {
-  margin-left: 20px;
-  font-size: 2rem;
+  margin-left: 3vh;
+  font-size: 1rem;
   font-family: "Teko", sans-serif;
 }
 
@@ -88,22 +88,65 @@ ul a {
   width: 40rem;
   height: auto;
 }
-.tabela {
+
+.tabela-discografia {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+table {
   padding: 1rem;
   border-collapse: collapse;
-  width: 21;
-  height: auto;
+  width: 40%;
 }
-.tabela th,
+
+table th,
 td {
-  width: 90px;
   border: 1px solid #f2f2f2;
   padding: 8px;
   text-align: left;
   font-family: "Teko", sans-serif;
 }
-.tabela th {
+
+table th {
   text-align: center;
+}
+
+.discografia {
+  width: 60%;
+  padding-left: 3rem;
+}
+
+.discografia ul {
+  margin-top: 1rem;
+  padding-left: 0;
+}
+
+.discografia ul,
+li {
+  margin-bottom: 1rem;
+  padding: 0;
+  list-style-type: none;
+  font-family: Arial, sans-serif;
+}
+
+.discografia a {
+  text-decoration: none;
+  color: #adbd46;
+}
+
+hr {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.discografia h1 {
+  font-family: "Teko", sans-serif;
+}
+
+.discografia h6 {
+  font-family: "Teko", sans serif;
 }
 
 #rodape {
@@ -115,10 +158,6 @@ td {
   clear: both;
   display: flex;
   justify-content: center;
-}
-
-.discografia {
-  width: 60%;
 }
 
 #rodape p {
@@ -138,8 +177,9 @@ td {
     text-align: center;
   }
   .name-cabecalho {
-    font-size: 5rem;
-    line-height: 1.2;
+    font-size: 8rem;
+    line-height: normal;
+    width: 100%;
   }
   .conteudo-div {
     height: auto;
@@ -147,15 +187,36 @@ td {
     justify-content: center;
   }
 
+  .conteudo-div h1 {
+    font-size: 3rem;
+    position: relative;
+    bottom: 4rem;
+  }
+  .conteudo-div h6 {
+    font-size: 1rem;
+    position: relative;
+    bottom: 4rem;
+    padding: 1rem;
+  }
+  .conteudo-div p {
+    position: relative;
+    bottom: 4rem;
+  }
+
   .conteudo-div img {
     position: relative;
-    margin-right: 5rem;
+    margin-left: 2rem;
+    bottom: 3rem;
     width: 80%;
     height: auto;
   }
-  .tabela {
+  table {
     position: relative;
-    top: 1rem;
-    padding: 2rem;
+    bottom: 2rem;
+    margin-left: 5rem;
+  }
+  .tabela-discografia {
+    height: auto;
+    flex-direction: column;
   }
 }
