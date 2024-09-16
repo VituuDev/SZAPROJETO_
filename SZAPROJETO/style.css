@@ -159,7 +159,7 @@ li {
   height: auto;
   text-align: center;
   padding: 20px;
-  border-top: 1px solid #f2f2f2;
+  border-top: 1px solid #0a0f12;
   clear: both;
   display: flex;
   justify-content: center;
@@ -178,7 +178,7 @@ li {
 }
 
 #cabecalho-fotos {
-  background-color: #f2f2f2;
+  background-color: #0a0f12;
   clear: both;
   height: 18rem;
 }
@@ -189,22 +189,21 @@ li {
   justify-content: center;
 }
 .name-cabecalho-fotos {
-  text-decoration: none;
   background: linear-gradient(#0a0d0c, #4a5958, #223f51);
   background-clip: text;
   color: transparent;
   font-size: 9rem;
-  height: auto;
-  align-items: center;
+  position: relative;
+  bottom: 3rem;
+  height: 18rem;
   font-family: "Rock Salt", serif;
   font-style: normal;
 }
 
 .home {
   position: relative;
-  top: 16rem;
+  top: 15.5rem;
   right: 11rem;
-  background-color: #f2f2f2;
 }
 
 #conteudo-fotos {
@@ -222,12 +221,12 @@ li {
 }
 
 #rodape-fotos {
-  background-color: #f2f2f2;
+  background-color: #0a0f12;
   height: auto;
   text-align: center;
   padding: 20px;
-  color: #0a0d0c;
-  border-top: 1px solid #f2f2f2;
+  color: #f2f2f2;
+  border-top: 1px solid #0a0f12;
   clear: both;
   display: flex;
   justify-content: center;
@@ -340,23 +339,22 @@ td {
   height: 15rem;
   width: 100%;
   display: flex;
+  justify-content: center;
   background: linear-gradient(to right, #22374c, #203141, #203548,
   #324554,#52525c,#6e646f, #796F6E,#6E605D,#3C3C46,#3A4151,
   #2E3A4A,#2D4159, #3F5165, #485A6E, #7F8591);
 }
 
 #cabecalho-sos h1{
-  position: relative;
   font-size: 10rem;
   color:#f2f2f2;
-  left: 50rem;
   font-style: italic;
 }
 
 #cabecalho-sos a {
   position: relative;
   top: 12rem;
-  left: 40rem;
+  right: 10rem;
 }
 #conteudo-sos{
   background-color: #0f1d26;
@@ -395,5 +393,135 @@ td {
 color: #f2f2f2;
 font-family: "Allison", sans-serif;
 font-size: 4rem;
+}
+
+/*adicionando o media para responsividade do site*/
+
+@media screen and (max-width: 475px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-size: 12px;
+  }
+  /*index*/
+  #cabecalho {
+    height: 15rem;
+    width: 100%;
+    text-align: center;
+  }
+  .name-cabecalho {
+    font-size: 8rem;
+    line-height: normal;
+    width: 100%;
+  }
+  .conteudo-div {
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .conteudo-div h1 {
+    font-size: 3rem;
+    position: relative;
+    bottom: 4rem;
+  }
+  .conteudo-div h6 {
+    font-size: 1rem;
+    position: relative;
+    bottom: 4rem;
+    padding: 1rem;
+  }
+  .conteudo-div p {
+    position: relative;
+    bottom: 4rem;
+    width: 100%;
+  }
+  .conteudo-div img {
+    position: relative;
+    bottom: 3rem;
+    width: 100%;
+    height: auto;
+  }
+  .table1 {
+    position: relative;
+    bottom: 2rem;
+    padding: 1rem;
+    width: 100%;
+  }
+  .tabela-discografia {
+    height: auto;
+    flex-direction: column;
+  }
+  .discografia {
+    position: relative;
+    right: 2rem;
+    width: 100%;
+  }
+  /*sza fotos*/
+  .cabecalho-fotos {
+    height: auto;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    bottom: 10rem;
+  }
+  .cabecalho-links-fotos {
+    height: 17rem;
+  }
+  .name-cabecalho-fotos {
+    padding-right: 0;
+    width: 100%;
+    height: auto;
+    position: relative;
+    left: 12px;
+    bottom: 4rem;
+    font-size: 10rem;
+    display: flex;
+  }
+  /*ctrl*/
+  .cabecalho-ctrl h1 {
+    position: relative;
+    padding-right: 2rem;
+  }
+  #conteudo-ctrl {
+    flex-direction: column;
+  }
+  .left-section {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  #conteudo-ctrl p {
+    width: 100%;
+    margin-left: 0;
+    margin-bottom: 1rem;
+  }
+  #conteudo-ctrl table {
+    width: 100%;
+    margin-left: 0;
+  }
+  .home-ctrl {
+    position: relative;
+    padding-right: 2rem;
+  }
+  /*SOS*/
+  *{
+    margin: 0;
+    padding: 0;
+  }
+  #conteudo-sos{
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+  }
+  .left-section{
+    position: relative;
+    top: 1rem;
+    right: 1rem;
+  }
 }
 
