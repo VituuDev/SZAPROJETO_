@@ -84,6 +84,7 @@
   padding: 1rem;
   font-family: Arial, sans-serif;
   font-size: 1rem;
+  text-align: justify;
 }
 
 .conteudo-div img {
@@ -201,8 +202,9 @@ li {
 
 .home {
   position: relative;
-  top: 1rem;
-  left: 12rem;
+  top: 16rem;
+  right: 11rem;
+  background-color: #f2f2f2;
 }
 
 #conteudo-fotos {
@@ -346,7 +348,7 @@ td {
 
   /*index*/
   #cabecalho {
-    height: auto;
+    height: 15rem;
     width: 100%;
     text-align: center;
   }
@@ -375,23 +377,29 @@ td {
   .conteudo-div p {
     position: relative;
     bottom: 4rem;
+    width: 100%;
   }
 
   .conteudo-div img {
     position: relative;
-    margin-left: 2rem;
     bottom: 3rem;
-    width: 80%;
+    width: 100%;
     height: auto;
   }
-  table {
+  .table1 {
     position: relative;
     bottom: 2rem;
-    margin-left: 5rem;
+    padding: 1rem;
+    width: 100%;
   }
   .tabela-discografia {
     height: auto;
     flex-direction: column;
+  }
+  .discografia {
+    position: relative;
+    right: 2rem;
+    width: 100%;
   }
 
   /*sza fotos*/
@@ -409,17 +417,19 @@ td {
     height: 17rem;
   }
   .name-cabecalho-fotos {
+    padding-right: 0;
     width: 100%;
     height: auto;
-    font-size: 8rem;
-    text-align: center;
-    display: block;
-    box-sizing: border-box;
+    position: relative;
+    left: 12px;
+    bottom: 4rem;
+    font-size: 10rem;
+    display: flex;
   }
   /*ctrl*/
   .cabecalho-ctrl h1 {
     position: relative;
-    right: 1rem;
+    padding-right: 2rem;
   }
   #conteudo-ctrl {
     flex-direction: column;
@@ -436,5 +446,9 @@ td {
   #conteudo-ctrl table {
     width: 100%;
     margin-left: 0;
+  }
+  .home-ctrl {
+    position: relative;
+    padding-right: 2rem;
   }
 }
