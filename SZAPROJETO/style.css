@@ -337,19 +337,49 @@ td {
 
 /*SOS*/
 #cabecalho {
-  height: 20rem;
+  height: 15rem;
   width: 100%;
+  display: flex;
+  background: linear-gradient(to right, #22374c, #203141, #203548,
+  #324554,#52525c,#6e646f, #796F6E,#6E605D,#3C3C46,#3A4151,
+  #2E3A4A,#2D4159, #3F5165, #485A6E, #7F8591);
 }
-#cabecalho h1 {
-  height: auto;
-  position: relative;
-  bottom: 2rem;
+
+#cabecalho h1{
+  font-size: 10rem;
+  color:#f2f2f2;
 }
+
 #cabecalho a {
   position: relative;
-  top: 8rem;
-  right: 14rem;
+  top: 6rem;
+  right: 10rem;
 }
+#conteudo-sos{
+  background-color: #0f1d26;
+  justify-content: space-between;
+  display: flex;
+  align-items: flex-start;
+  padding: 1rem;
+}
+
+.left-section img{
+  width: 21rem;
+  height: auto;
+  margin-bottom: 1rem;
+  border: 2px solid #223f51 ;
+  border-radius: 1rem;
+}
+
+.menu-songs{
+
+}
+
+.left-section {
+  display: flex;
+  flex-direction: column;
+}
+
 /*adicionando o media para responsividade do site*/
 
 @media screen and (max-width: 475px) {
