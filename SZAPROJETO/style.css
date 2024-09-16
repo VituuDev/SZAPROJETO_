@@ -15,19 +15,19 @@
   clear: both;
   align-items: center;
   justify-content: center;
-  height: 15.5rem;
+  height: 16rem;
 }
 
 .name-cabecalho {
+  position: relative;
+  padding-bottom: 14rem;
+  padding-left: 26rem;
   text-decoration: none;
   background: linear-gradient(#0a0d0c, #4a5958, #223f51);
   background-clip: text;
-  position: relative;
-  bottom: 0.5rem;
   color: transparent;
-  display: inline-block;
+  display: flex;
   font-size: 10rem;
-  align-items: center;
   font-family: "Rock Salt", serif;
   font-style: normal;
 }
@@ -333,6 +333,22 @@ td {
   width: 20rem;
   height: 25rem;
   margin-top: 1rem;
+}
+
+/*SOS*/
+#cabecalho {
+  height: 20rem;
+  width: 100%;
+}
+#cabecalho h1 {
+  height: auto;
+  position: relative;
+  bottom: 2rem;
+}
+#cabecalho a {
+  position: relative;
+  top: 8rem;
+  right: 14rem;
 }
 /*adicionando o media para responsividade do site*/
 
