@@ -9,6 +9,9 @@
 }
 
 /*CSS do Index.html*/
+/*display:flex, permite o posicionamento eficiente dos filhos do elementon
+clear:both, impede que o cabecalho fique flutuando, centralizado no centro e 
+atribuindo 16rem a altura do cabecalho */
 #cabecalho {
   background-color: #0a0f12;
   display: flex;
@@ -18,6 +21,14 @@
   height: 16rem;
 }
 
+/*posição: relative, para poder modificar a localização do nome, padding
+botto:0, para remover os cantos de espaco com o a parte baixa do cabecalho,
+padding-left:0, para remover os cantos com a esquerda, text-decoration:none,
+para não deixar como forma de link, tirando a estetica do titulo, background do
+titulo gradiente, background-clip: text, para remover qualquer coisa do texto,
+e color:transparent, para que o background gradiente funcionasse direito no titulo,
+font-size:10rem para ajustar o tamanho do nome, font-family:para definir o 
+tipo de fonte a ser utilizada.*/
 .name-cabecalho {
   position: relative;
   padding-bottom: 0;
@@ -31,20 +42,20 @@
   font-family: "Rock Salt", serif;
   font-style: normal;
 }
-
+/*ajustando o texto, margin e familia da fonte das linhas do menu*/
 .menu ul > li {
   text-align: center;
   margin-top: 80px;
   font-family: "Teko", sans-serif;
 }
-
+/*ajustando o texto, cor, tamanho e margem do link do menu */
 .menu ul a {
   text-decoration: none;
   color: #f2f2f2;
   font-size: 40px;
   margin-left: 30px;
 }
-
+/*definindo background, comprimento, altura, itens flutantes, cor e posição do conteudo*/
 #conteudo {
   background-color: #0f1d26;
   width: 100%;
@@ -53,7 +64,7 @@
   color: #f2f2f2;
   position: relative;
 }
-
+/*ajustando a posição do menu*/
 .menu ul {
   display: flex;
   justify-content: center;
@@ -62,18 +73,19 @@
   bottom: 80px;
   right: 25px;
 }
-
+/*alinhando os conteudos da div-conteudo*/
 .conteudo-div {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
 }
-
+/*ajustando o titulo do conteudo*/
 .conteudo-div h1 {
   margin-left: 4vh;
   font-family: "Whisper", cursive;
   font-size: 5rem;
 }
+/*ajustando o subtitulo do conteudo*/
 .conteudo-div h6 {
   margin-left: 3vh;
   font-size: 1rem;
@@ -86,25 +98,25 @@
   font-size: 1rem;
   text-align: justify;
 }
-
+/*ajustando a imagem do conteudo*/
 .conteudo-div img {
   margin-right: 2rem;
   width: 40rem;
   height: auto;
 }
-
+/*ajustando a posição da div tabela-discografia*/
 .tabela-discografia {
   display: flex;
   justify-content: space-between;
   margin-top: 2rem;
 }
-
+/*estilizando e delimitando o tamanho da tabela */
 .table1 {
   padding: 1rem;
   border-collapse: collapse;
   width: 40%;
 }
-
+/*estilizando o titulo e linhas da tabela*/
 .table1 th,
 td {
   border: 1px solid #f2f2f2;
@@ -112,16 +124,16 @@ td {
   text-align: left;
   font-family: "Teko", sans-serif;
 }
-
+/*centralizando o texto das colunas*/
 .table1 th {
   text-align: center;
 }
-
+/*definindo o tamanho da area de discografia e o espaçamento da tabela*/
 .discografia {
   width: 60%;
   padding-left: 3rem;
 }
-
+/*ajustndo a localização da parte de discografia*/
 .discografia ul {
   margin-top: 1rem;
   padding-left: 0;
@@ -134,7 +146,7 @@ li {
   list-style-type: none;
   font-family: Arial, sans-serif;
 }
-
+/*estilzando os links da discografia*/
 .discografia a {
   text-decoration: none;
   color: #adbd46;
@@ -152,7 +164,7 @@ li {
 .discografia h3 {
   font-family: "Teko", sans serif;
 }
-
+/*rodape da pagina inicial*/
 #rodape {
   background-color: #0a0f12;
   color: #f2f2f2;
